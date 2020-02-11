@@ -1,11 +1,12 @@
-API-POSTMAN
+API-Postman
 
 API Request for Adactin_Hotel_MobileApp in Postman
 
 Getting started :
 
 Postman is a collaboration platform for API development. Postman's features simplify each step of building an API and streamline collaboration so you can create better APIs—faster.
-# Postman_collection
+
+Using the Collection:
 
 I'm actually trying something new, you can share a collection from your Postman client and add a "Run in Postman" button to a site, it's the first time that i'm giving it a go so let me know if it doesn't work.
 
