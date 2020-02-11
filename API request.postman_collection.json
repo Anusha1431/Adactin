@@ -1,0 +1,241 @@
+{
+	"info": {
+		"_postman_id": "3f1df2f3-163c-4e4c-93cd-cd1daf5b56ac",
+		"name": "API request",
+		"description": "Created new collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "login_hotel",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://adactin.com/HotelAdactinWebServices/REST/api.php?action=checkLogin&username=m6anusha&password=91CZPX",
+					"protocol": "https",
+					"host": [
+						"adactin",
+						"com"
+					],
+					"path": [
+						"HotelAdactinWebServices",
+						"REST",
+						"api.php"
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "checkLogin"
+						},
+						{
+							"key": "username",
+							"value": "m6anusha"
+						},
+						{
+							"key": "password",
+							"value": "91CZPX"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "searchHotel",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://adactin.com/HotelAdactinWebServices/REST/api.php?action=searchHotel&location=Sydney&userToken=m6anusha3PLU22M0xV&room_nos=2&checkInDate=11-02-2020&checkOutDate=12-02-2020&adult_room=4",
+					"protocol": "https",
+					"host": [
+						"adactin",
+						"com"
+					],
+					"path": [
+						"HotelAdactinWebServices",
+						"REST",
+						"api.php"
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "searchHotel"
+						},
+						{
+							"key": "location",
+							"value": "Sydney"
+						},
+						{
+							"key": "userToken",
+							"value": "m6anusha3PLU22M0xV"
+						},
+						{
+							"key": "room_nos",
+							"value": "2"
+						},
+						{
+							"key": "checkInDate",
+							"value": "11-02-2020"
+						},
+						{
+							"key": "checkOutDate",
+							"value": "12-02-2020"
+						},
+						{
+							"key": "adult_room",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "bookHotel",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://adactin.com/HotelAdactinWebServices/REST/api.php?action=bookHotel&userToken=m6anusha3PLU22M0xV&hotelName=Hotel Sunshine&location=Sydney&room_type=Standard&room_nos=2&arr_date=11-02-2020&dep_date=12-02-2020&price_night=125&total_price=135&firstname=Baby&lastname=han&address=homebush west&ccardno=1234123412341234&ccardtype=VISA&expiryMonth=April&expiryYear=2021&cvvNum=1234&adult_no=2",
+					"protocol": "https",
+					"host": [
+						"adactin",
+						"com"
+					],
+					"path": [
+						"HotelAdactinWebServices",
+						"REST",
+						"api.php"
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "bookHotel"
+						},
+						{
+							"key": "userToken",
+							"value": "m6anusha3PLU22M0xV"
+						},
+						{
+							"key": "hotelName",
+							"value": "Hotel Sunshine"
+						},
+						{
+							"key": "location",
+							"value": "Sydney"
+						},
+						{
+							"key": "room_type",
+							"value": "Standard"
+						},
+						{
+							"key": "room_nos",
+							"value": "2"
+						},
+						{
+							"key": "arr_date",
+							"value": "11-02-2020"
+						},
+						{
+							"key": "dep_date",
+							"value": "12-02-2020"
+						},
+						{
+							"key": "price_night",
+							"value": "125"
+						},
+						{
+							"key": "total_price",
+							"value": "135"
+						},
+						{
+							"key": "firstname",
+							"value": "Baby"
+						},
+						{
+							"key": "lastname",
+							"value": "han"
+						},
+						{
+							"key": "address",
+							"value": "homebush west"
+						},
+						{
+							"key": "ccardno",
+							"value": "1234123412341234"
+						},
+						{
+							"key": "ccardtype",
+							"value": "VISA"
+						},
+						{
+							"key": "expiryMonth",
+							"value": "April"
+						},
+						{
+							"key": "expiryYear",
+							"value": "2021"
+						},
+						{
+							"key": "cvvNum",
+							"value": "1234"
+						},
+						{
+							"key": "adult_no",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "logout",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://adactin.com/HotelAdactinWebServices/REST/api.php?action=logout&userToken=m6anusha3PLU22M0xV",
+					"protocol": "https",
+					"host": [
+						"adactin",
+						"com"
+					],
+					"path": [
+						"HotelAdactinWebServices",
+						"REST",
+						"api.php"
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "logout"
+						},
+						{
+							"key": "userToken",
+							"value": "m6anusha3PLU22M0xV"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
